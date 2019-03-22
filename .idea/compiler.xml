@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="leapfrog-cms" />
+        <module name="leapfrog-common" />
+        <module name="leapfrog-console" />
+        <module name="leapfrog-dao" />
+        <module name="leapfrog-interface" />
+        <module name="leapfrog-login" />
+        <module name="leapfrog-pojo" />
+        <module name="leapfrog-portal" />
+        <module name="leapfrog-product" />
+        <module name="leapfrog-service-cms" />
+        <module name="leapfrog-service-cob" />
+        <module name="leapfrog-service-product" />
+        <module name="leapfrog-service-solr" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="leapfrog" target="1.5" />
+      <module name="leapfrog-cms" target="1.7" />
+      <module name="leapfrog-common" target="1.8" />
+      <module name="leapfrog-console" target="1.7" />
+      <module name="leapfrog-dao" target="1.8" />
+      <module name="leapfrog-interface" target="1.8" />
+      <module name="leapfrog-login" target="1.7" />
+      <module name="leapfrog-pojo" target="1.8" />
+      <module name="leapfrog-portal" target="1.7" />
+      <module name="leapfrog-product" target="1.7" />
+      <module name="leapfrog-service-cms" target="1.7" />
+      <module name="leapfrog-service-cob" target="1.7" />
+      <module name="leapfrog-service-product" target="1.7" />
+      <module name="leapfrog-service-solr" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

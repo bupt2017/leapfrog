@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="leapfrog-cms:war">
+    <output-path>$PROJECT_DIR$/leapfrog-cms/target</output-path>
+    <root id="archive" name="leapfrog-cms.war">
+      <element id="artifact" artifact-name="leapfrog-cms:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://code.alibabatech.com/schema/dubbo        
+		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+		
+	<!-- Dubbo提供方 -->
+	<!-- 1：名称  计算机 区别 唯一 -->
+	<dubbo:application name="babasport-service-solr"/>
+	<!-- 2：设置注册中心  地址  zookeeper在哪里  redis ... -->
+<!-- 	<dubbo:registry address="172.16.52.207:2181,172.16.52.208:2181,172.16.52.209:2181" protocol="zookeeper"/> -->
+	<!--<dubbo:registry address="172.16.52.201:2181,172.16.52.202:2181,172.16.52.203:2181,172.16.52.204:2181,172.16.52.205:2181,172.16.52.206:2181,172.16.52.207:2181,172.16.52.208:2181,172.16.52.209:2181" protocol="zookeeper"/>-->
+	<!--<dubbo:registry address="127.0.0.1:2181" protocol="zookeeper"/>-->
+	<!--只提供服务, 不注册到zookeeper-->
+	<!--因为本项目固定得知地址, 所以可以不用到zookeeper注册再分发-->
+	<!--这样节省资源-->
+	<dubbo:registry address="N/A"/>
+	<!-- 3：dubbo://192.168.39.80:20880  默认  设置提供服务的端口号 -->
+	<dubbo:protocol port="20881" name="dubbo"/>
+	<!-- 4： 暴露实现类-->
+	<dubbo:service interface="cn.travelround.core.service.SearchService" ref="searchService"/>
+
+	
+	
+		
+</beans>
